@@ -1,10 +1,10 @@
 /* De aqui es mi barra de navegacion*/
 .container-nav {
-    border: 1px solid brown;
+    /*border: 1px solid brown;*/
     display: flex;
     padding: 10px;
     height: 50px;
-    background-color: grey;
+    background-color: #0A2647;
     margin: auto;
 }
 
@@ -20,7 +20,7 @@
 }
 
 li>a {
-    padding: 8px 24px;
+    padding: 27px 24px;
 }
 
 
@@ -29,17 +29,18 @@ li {
 }
 
 
-a {
+a{
     color: white;
     text-decoration: none;
 }
-
+.nav-links a:hover{
+    background-color: #9BA4B5;
+}
 
 .nav-links {
     display: flex;
     align-items: center;
 }
-
 
 .button-menu-toggle {
     display: none;
@@ -63,6 +64,7 @@ a {
         border: none;
         border-radius: 50px;
         padding: 0 24px;
+        /*tipo de letras*/
         font-family: monospace;
         font-weight: bold;
         font-size: 20px;
@@ -88,25 +90,29 @@ a {
 
 /* De aqui en adelante es mi html*/
 body {
-    background-color: rgb(146, 192, 231);
+    margin: 0%;
+    border: 0%;
+    background-color: white;
     color: aliceblue;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: monospace;
+}
+body .galeria img{
+    border: 2px solid black;
 }
 
 .galeria {
-
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-
+    justify-content:center;
+    align-items: stretch;
 }
 body h1 {
 
-    background-color: black;
+    background-color: #144272;
     color: aliceblue;
     padding: 10px;
     margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: monospace;
     font-size: 36px;
     text-align: center;
 }
@@ -118,7 +124,7 @@ body h1 {
 
 p {
     color: aliceblue;
-    font-family: 'georgia', serif;
+    font-family: monospace;
     font-size: 18px;
     padding: 10;
     margin: 20px;
@@ -127,16 +133,19 @@ p {
 
 footer {
     display: flex;
-    background-color: black;
+    background-color: #2C74B3;
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
     padding: 1px;
-}
-footer ul {
-    display: flex;
 }
 
 .parrafo {
-    background-color: brown;
+    background-color: #205295;
     padding: 1px;
+}
+#myForm {
+    padding: 10px;
 }
 
 @media (max-width:1000px) {
